@@ -11,8 +11,8 @@ public class Main {
 
     public static void main(String[] args) throws Exception{
         mScanner = new Scanner(System.in);
-        candys = new ArrayList<>();
         mFileManager = new FileManager();
+        candys = mFileManager.candysreadFile(FILE_PATH);
         while (true){
             question();
         }
